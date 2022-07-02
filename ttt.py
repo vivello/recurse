@@ -110,3 +110,39 @@ class TTT:
             else:
                 return False
 
+    #self.winner() returns which player is the winner of the game or if there is not winner yet
+    def winner(self):
+        return self._winner
+
+    #self.player() returns which player the current turn belongs to
+    def player(self):
+        return self._player
+
+
+def play_game():
+    game = ""
+    game_type = ""
+    print("Welcome to TIC TAC TOE")
+    while (game_type != "Y") or (game_type != "C"):
+        print("If you would like to play classic tic tac toe, enter Y.")
+        print("Alternatively, for a custom game, please enter C.")
+        game_type = input("Y / C: ")
+        if game_type == "Y":
+            game = TTT()
+        elif game_type == "C":
+            while isinstance(current_game, str)
+                size_input = input("Please enter the size of your desired custom board: ")
+                try:
+                    game_size = int(size_input)
+                except ValueError:
+                    print("Board size must be a positive integer value. Try again.")
+                else:
+                    if game_size < 1:
+                        print("Board size must be a positive integer value. Try again.")
+                    else:
+                        game = TTT(game_size)
+        else:
+            print("That is not a valid selection. Try again.")
+    while game.winner() == "":
+        print(game.show_board())
+            
