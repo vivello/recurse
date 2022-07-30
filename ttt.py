@@ -77,16 +77,16 @@ class TTT:
             board += line
         return board 
     
-    '''
-        0   1   2
-         
-    0   X | O | X 
-       --- --- ---
-    1   O | X | O
-       --- --- ---
-    2   X | O | X
-    
-    '''
+    ##    Sample Board
+##
+##        0   1   2
+##         
+##    0   X | O | X 
+##       --- --- ---
+##    1   O | X | O
+##       --- --- ---
+##    2   X | O | X
+##    
 
     # self.add(self, col, row) enters the player's move into the board if it is valid
     def add(self):
